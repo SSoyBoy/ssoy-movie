@@ -34,6 +34,9 @@ const Login = () => {
   const handleSignInWithGG = async (event) => {
     event.preventDefault();
     try {
+      provider.setCustomParameters({
+        prompt: "select_account",
+      });
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
       localStorage.setItem("email", user.email);
