@@ -78,27 +78,27 @@ const Login = () => {
           ) : (
             <>
               <div className="w-full flex flex-wrap justify-center items-center">
-                <button
+                <div
                   onClick={handleSignInWithGG}
                   className="border-2 rounded-full border-white border-solid h-10 w-10 m-2 items-center 
                             flex justify-center duration-300 ease-linear hover:scale-105 hover:border-orange-600 text-xl font-medium"
                 >
                   <IoLogoGoogle className="text-white h-4 w-4 hover:scale-105" />
-                </button>
-                <button
+                </div>
+                <div
                   onClick={handleSignInWithGG}
                   className="border-2 rounded-full border-white border-solid h-10 w-10 m-2 items-center 
                             flex justify-center duration-300 ease-linear hover:scale-105 hover:border-orange-600 text-xl font-medium"
                 >
                   <FaTwitter className="text-white hover:scale-105" />
-                </button>
-                <button
+                </div>
+                <div
                   onClick={handleSignInWithGG}
                   className="border-2 rounded-full border-white border-solid h-10 w-10 m-2 items-center 
                             flex justify-center duration-300 ease-linear hover:scale-105 hover:border-orange-600 text-xl font-medium"
                 >
                   <FaFacebookF className="text-white hover:scale-105" />
-                </button>
+                </div>
               </div>
               <div className="w-full flex justify-center items-center py-1">
                 <p className="flex items-center w-5 h-[1px] bg-white mr-1"></p>
