@@ -64,11 +64,13 @@ const WatchList = () => {
                   <p className="text-[#989899] ml-1">({item?.year})</p>
                 </h2>
                 <p>{item?.releaseDate?.split("-")[0]}</p>
-                <div className="overview">
-                  <h3 className="sm:mb-1 lg:mb-2">Overview</h3>
-                  <p className=" sm:text-sm md:text-base text-[#989899] truncate md:whitespace-normal">
-                    {item?.content}
-                  </p>
+                <div>
+                  <h3 className="sm:mb-1 lg:mb-2">Nội dung phim</h3>
+                  <div className="overflow-y-auto max-h-36 xl:max-h-48">
+                    <p className=" sm:text-sm md:text-base text-[#989899] truncate md:whitespace-normal cursor-text">
+                      {item?.content}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
