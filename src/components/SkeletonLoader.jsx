@@ -10,9 +10,7 @@ const SkeletonLoader = () => {
           key={index}
           className="flex p-2 mx-2 rounded-lg items-center animate-pulse duration-75"
         >
-          {/* Skeleton image */}
           <div className="w-14 sm:w-20 h-20 sm:h-28 bg-slate-700 rounded-md"></div>
-          {/* Skeleton text */}
           <div className="w-[80%] text-xs sm:text-sm md:text-base px-4 space-y-2">
             <div className="bg-gray-700 h-4 rounded w-1/2"></div>
             <div className="bg-gray-700 h-4 rounded w-3/4"></div>

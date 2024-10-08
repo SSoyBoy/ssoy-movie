@@ -52,6 +52,7 @@ const WatchList = () => {
                   className="w-full sm:w-full rounded-md"
                   src={`${urlImage}` + item?.thumb_url}
                   alt=""
+                  loading="lazy"
                 />
               </div>
               <div className="w-[85%] text-xs sm:text-sm md:text-base lg:text-lg px-2 sm:px-4">

@@ -62,6 +62,7 @@ const Slider = () => {
                           }
                           className="group-hover:scale-110 transition ease-in-out duration-500 rounded-md"
                           alt=""
+                          loading="lazy"
                         />
                       </div>
                       <div className="">

@@ -98,6 +98,7 @@ const SearchBar = () => {
                       }`}
                       src={`${urlImage}` + item?.thumb_url}
                       alt=""
+                      loading="lazy"
                       onLoad={() => handleImageLoad(index)}
                     />
                   </div>

@@ -66,7 +66,18 @@ const ListMovies = ({ slug, keyword, slice, id }) => {
     };
     fetchApi();
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [currentPage, slug, keyword, location]);
+  }, [
+    location.pathname,
+    id,
+    format,
+    category,
+    country,
+    year,
+    time,
+    keyword,
+    slug,
+    currentPage,
+  ]);
 
   const generatePagination = () => {
     const pages = [];
@@ -142,10 +153,15 @@ const ListMovies = ({ slug, keyword, slice, id }) => {
                       ? "opacity-100 blur-none"
                       : "opacity-0 blur-md transition-all duration-500"
                   }`}
+                  width={300}
+                  height={400}
                   src={
                     `https://img.ophim.live/uploads/movies/` + item.thumb_url
                   }
-                  alt=""
+                  srcSet={`https://img.ophim.live/uploads/movies/${item.thumb_url}?w=300 300w, https://img.ophim.live/uploads/movies/${item.thumb_url}?w=500 500w, https://img.ophim.live/uploads/movies/${item.thumb_url}?w=800 800w`}
+                  sizes="(max-width: 600px) 300px, (max-width: 1200px) 500px, 200px"
+                  alt={item.thumb_url}
+                  loading="lazy"
                   onLoad={() => handleImageLoad(idx)}
                 />
                 <div className="absolute bottom-0 right-0 z-10 p-1 bg-gradient-to-tr from-orange-600 to-yellow-600">

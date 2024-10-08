@@ -129,6 +129,7 @@ const MoviesModel = ({ title, slug }) => {
                                 item.thumb_url
                               }
                               alt=""
+                              loading="lazy"
                               onLoad={() => handleImageLoad(idx)}
                             />
                           </div>
@@ -173,6 +174,7 @@ const MoviesModel = ({ title, slug }) => {
                                 item.thumb_url
                               }
                               alt=""
+                              loading="lazy"
                               onLoad={() => handleImageLoad(idx)}
                             />
                           </div>
